@@ -13,7 +13,7 @@ export class Filters {
     }
 
     callFoo() {
-        this.runtime.foo = FormatUtil.phone;
+        this.runtime.foo = FooUtil.foo;
         return this;
     }
 
