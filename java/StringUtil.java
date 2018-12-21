@@ -30,7 +30,7 @@ public class StringUtil {
 	 * Desc: 숫자에 컴마 추가(파라미터 String)
 	 * History:
 	 **/
-	private static String addComma(String num) {
+	public static String addComma(String num) {
 		// null체크
 		if(num == null || num.isEmpty()) { return "0"; }
 		
@@ -57,7 +57,7 @@ public class StringUtil {
 	 * Desc: 숫자에 컴마 추가(Number 오버로딩)
 	 * History:
 	 **/
-	private static String addComma(Number num) {
+	public static String addComma(Number num) {
 		if(num == null) { num = 0; }
 		return addComma(num.toString());
 	}
@@ -68,7 +68,7 @@ public class StringUtil {
 	 * Desc: 숫자에 컴마 제거
 	 * History:
 	 **/
-	private static String removeComma(String commaNum) {
+	public static String removeComma(String commaNum) {
 		if(commaNum == null || commaNum.isEmpty()) { return "0"; }
 		return commaNum.replaceAll(",", "");
 	}
